@@ -1,0 +1,18 @@
+# Ignore Terraform state and backup files
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+terraform.tfvars        # Contains sensitive input variables
+*.tfvars                # Ignore all variable files (if multiple)
+*.tfstate*              # Any state files
+
+# Ignore private SSH keys
+*.pem
+*.key
+
+# Ignore plan output
+*.tfplan
+
+# Optional: Ignore logs or crash data
+crash.log
+terraform.log
